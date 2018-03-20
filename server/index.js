@@ -4,8 +4,8 @@ var handler = require('./handler');
 
 var start = function () {
   var server = http.createServer((req, res)=>{
-    handler(req, ()=>{
-      router(req, res);
+    handler(req, (params)=>{
+      router(req, res, params);
     });
   });
 
