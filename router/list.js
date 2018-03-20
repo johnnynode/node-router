@@ -3,8 +3,8 @@
 var handler = require('./handler');
 
 var List = function () {};
-var prototype = List.prototype = {};
+var ltp = List.prototype = {};
 
-prototype["/"] = handler.home;
+ltp["/"] = handler.home;
 
 module.exports = new List();
