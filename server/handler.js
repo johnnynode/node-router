@@ -22,6 +22,7 @@ var handler = (req,callback)=>{
           var params = querystring.parse(data);
           callback(params);
           break;
+          // other method here to be handled
       }
   });
 };

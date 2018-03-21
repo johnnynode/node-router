@@ -12,7 +12,10 @@ hdp.home = (res) => {
 }
 
 // 列表页
-hdp.list = (res) => {
+hdp.list = (res,params) => {
+  console.log('params');
+  console.log(params);
+
   res.writeHead(200,{
     'Content-Type':'text/html'
   });
@@ -20,7 +23,9 @@ hdp.list = (res) => {
 }
 
 // 详情页
-hdp.detail = (res) => {
+hdp.detail = (res, params) => {
+  console.log('detail params');
+  console.log(params);
   res.writeHead(200,{
     'Content-Type':'text/html'
   });
